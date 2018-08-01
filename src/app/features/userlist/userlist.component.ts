@@ -4,6 +4,7 @@ import { UserList } from '../../models/userlist/userlist';
 @Component({
   selector: 'app-userlist',
   templateUrl: './userlist.component.pug',
+  styleUrls: ['./userlist.component.scss']
 })
 export class UserListComponent implements OnInit {
   @Input() userlist: UserList;

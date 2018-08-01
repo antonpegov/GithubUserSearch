@@ -48,6 +48,11 @@ export const getUsersLoaded = createSelector(
   fromUserList.getLoaded
 );
 
+export const getUsersLoading = createSelector(
+  getUserListState,
+  fromUserList.getLoading
+);
+
 export const getUserList = createSelector(
   getUserListState,
   fromUserList.getUsers

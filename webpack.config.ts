@@ -162,7 +162,9 @@ const clientConfig = function webpackConfig(): WebpackConfig {
       exclude: /System\.import/}),
     new HtmlWebpackPlugin({
         template: 'src/index.html',
-        metadata: { isDevServer: DEV_SERVER }
+        metadata: { isDevServer: DEV_SERVER },
+        title: 'Github User Search',
+        base_href: GITHUB ? 'https://antonpegov.github.io/GITHUB_USER_SEARCH/' : '/',
     }),
     ...MY_CLIENT_PLUGINS
   ];

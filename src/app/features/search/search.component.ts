@@ -17,6 +17,7 @@ export class SearchComponent implements OnDestroy, OnInit {
   destroyed$: Subject<any> = new Subject<any>();
   userList$: Observable<UserList>;
   userListLoaded$: Observable<boolean>;
+  userListLoading$: Observable<boolean>;
   userlist: UserList;
   str: string = undefined;
   ready = true;
@@ -26,9 +27,10 @@ export class SearchComponent implements OnDestroy, OnInit {
   ) {
     this.userList$ = $store.select(fromRoot.getUserList);
     this.userListLoaded$ = $store.select(fromRoot.getUsersLoaded);
+    this.userListLoading$ = $store.select(fromRoot.getUsersLoading);
 
-    this.userList$.subscribe(_userlist => this.userlist = _userlist);
-    this.userListLoaded$.subscribe(_loaded => this.ready = _loaded);
+    // this.userList$.subscribe(_userlist => { debugger; this.userlist = _userlist; });
+    // this.userListLoaded$.subscribe(_loaded => { debugger; this.ready = _loaded; });
   }
 
   search() {

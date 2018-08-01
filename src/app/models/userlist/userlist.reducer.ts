@@ -25,12 +25,12 @@ export function userlistReducer(state = initialState, action: UserListActions): 
       console.log({
         ...state,
         loading: true,
-        userlist: emptyUserList // action.payload
+        // userlist: emptyUserList // action.payload
       });
       return {
         ...state,
         loading: true,
-        userlist: emptyUserList // action.payload
+        // userlist: emptyUserList // action.payload
       };
     }
     case UserListActionTypes.Set: {
@@ -55,6 +55,7 @@ export function userlistReducer(state = initialState, action: UserListActions): 
 
 // #region Getters for Selectors
 export const getLoaded = (state: UserListState) => state.loaded;
+export const getLoading = (state: UserListState) => state.loading;
 export const getUsers = (state: UserListState) => { return state.userlist; };
 // #endregion
 

@@ -10,9 +10,7 @@ Use `yarn run start:hmr` to run dev server in HMR mode.
 
 Use `yarn run build` for production build.
 
-Use `yarn run build:github` for production build to /docs folder.
-
-Use `yarn run server:prod` for production server and production watch. Default production port is `8088`.
+Use `yarn run build:github` for production build to /docs folder and proper base href.
 
 Default ports and option to use proxy backend for dev server can be changed in `constants.js` file.
 

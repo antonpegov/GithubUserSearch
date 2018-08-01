@@ -1,5 +1,5 @@
 h2 Github user search application
-.d-inline-block(ngbDropdown)
+//- .d-inline-block(ngbDropdown)
   button.btn.btn-outline-primary#dropdownBasic1(ngbDropdownToggle) Navigation
   div(ngbDropdownMenu aria-labelledby="dropdownBasic1")
     button.dropdown-item(*ngFor="let view of views trackBy:trackByIdx",[routerLink]="view.link") {{view.name}}
