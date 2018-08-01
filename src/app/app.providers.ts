@@ -1,7 +1,7 @@
 import { CustomSerializer } from './reducers';
 import { RouterStateSerializer } from '@ngrx/router-store';
 import { TransferState } from '@angular/platform-browser';
-import { UserService } from './user/user.service';
+import { UserService } from './services/user.service';
 declare var APP_CONFIG;
 
 export const APP_PROVIDERS = [

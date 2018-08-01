@@ -2,7 +2,7 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 
 import { AppState } from '../../reducers';
 import { Store } from '@ngrx/store';
-import { User } from '../../user/user.model';
+import { User } from '../../models/user/user.model';
 import { Observable, Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 

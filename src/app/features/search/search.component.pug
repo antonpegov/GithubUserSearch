@@ -1,2 +1,18 @@
 section
-  h2 Search page
+  .entry
+    input([(ngModel)]="str",
+      type="text",
+      id="searchInput",
+      size="18",
+      maxlength="20",
+      placeholder="Enter name here...")
+    button(
+      [disabled]="!ready",
+      kendoButton,
+      id="searchBtn",
+      (click)="search(str)") SEARCH
+    span.spinner.k-i-loading.k-icon(
+      *ngIf="!ready",
+      style="font-size: 24px; color: #ff6358")
+  .enrty
+    app-userlist([userlist]=userlist)

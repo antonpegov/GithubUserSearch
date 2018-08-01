@@ -139,6 +139,48 @@
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@nodelib/fs.stat/-/fs.stat-1.1.0.tgz#50c1e2260ac0ed9439a181de3725a0168d59c48a"
 
+"@progress/kendo-angular-buttons@^4.1.2":
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-angular-buttons/-/kendo-angular-buttons-4.1.2.tgz#d2bb33a3421fb35c6aab7d813ea98b01bc4406df"
+  dependencies:
+    "@progress/kendo-angular-popup" "^2.0.0"
+    "@progress/kendo-schematics" "^0.2.0"
+    tslib "^1.7.0"
+
+"@progress/kendo-angular-l10n@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-angular-l10n/-/kendo-angular-l10n-1.2.0.tgz#314a84dfea1255067a4dcd1ef7928f63f067b5ef"
+  dependencies:
+    tslib "^1.7.0"
+
+"@progress/kendo-angular-layout@^3.1.1":
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-angular-layout/-/kendo-angular-layout-3.1.1.tgz#df91a1881981b3ee76e992bcf71102d6b41c39d9"
+  dependencies:
+    "@progress/kendo-schematics" "^0.2.0"
+    "@telerik/kendo-draggable" "^1.5.1"
+    tslib "^1.7.0"
+
+"@progress/kendo-angular-popup@^2.0.0":
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-angular-popup/-/kendo-angular-popup-2.4.1.tgz#732fd06e8960c95130a533e09eb6c2383b58911c"
+  dependencies:
+    "@progress/kendo-popup-common" "^1.6.0"
+    "@progress/kendo-schematics" "^0.2.0"
+    tslib "^1.7.0"
+
+"@progress/kendo-popup-common@^1.6.0":
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-popup-common/-/kendo-popup-common-1.6.0.tgz#aabe9af0e1eff03ba618dd6d0dad56ba7d4463be"
+
+"@progress/kendo-schematics@^0.2.0":
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-schematics/-/kendo-schematics-0.2.4.tgz#4f46e3269f9aec2399377c78b77ad385ee98901b"
+
+"@progress/kendo-theme-default@^2.54.1":
+  version "2.54.1"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-theme-default/-/kendo-theme-default-2.54.1.tgz#25a8e82d9428845efec5bbb1e0f3698d2c4b7c49"
+
 "@samverschueren/stream-to-observable@^0.3.0":
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/@samverschueren/stream-to-observable/-/stream-to-observable-0.3.0.tgz#ecdf48d532c58ea477acfcab80348424f8d0662f"
@@ -148,6 +190,10 @@
 "@sindresorhus/is@^0.7.0":
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.7.0.tgz#9a06f4f137ee84d7df0460c1fdb1135ffa6c50fd"
+
+"@telerik/kendo-draggable@^1.5.1":
+  version "1.8.2"
+  resolved "https://registry.yarnpkg.com/@telerik/kendo-draggable/-/kendo-draggable-1.8.2.tgz#c0a4026f6aaffa6b0dabb8c6d4d7bd7e6754135d"
 
 "@types/babel-types@*", "@types/babel-types@^7.0.0":
   version "7.0.4"
@@ -9022,7 +9068,7 @@ tsickle@^0.29.0:
     source-map "^0.6.0"
     source-map-support "^0.5.0"
 
-tslib@^1.7.1, tslib@^1.8.0, tslib@^1.8.1, tslib@^1.9.0, tslib@^1.9.2:
+tslib@^1.7.0, tslib@^1.7.1, tslib@^1.8.0, tslib@^1.8.1, tslib@^1.9.0, tslib@^1.9.2:
   version "1.9.3"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.9.3.tgz#d7e4dd79245d85428c4d7e4822a79917954ca286"
 

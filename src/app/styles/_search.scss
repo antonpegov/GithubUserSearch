@@ -1,0 +1,12 @@
+input {
+  padding: 0;
+  display: inline-block;
+  border: none;
+  width: auto;
+  &:focus {
+    outline: none;
+  }
+}
+button {
+  padding: 7px 14px;
+}

@@ -12,8 +12,8 @@ import { storeFreeze } from 'ngrx-store-freeze';
 import { storeLogger } from 'ngrx-store-logger';
 import { routerReducer, RouterReducerState, RouterStateSerializer } from '@ngrx/router-store';
 import * as fromRouter from '@ngrx/router-store';
-
-import * as fromUser from '../user/user.reducer';
+import * as fromUserList from '../models/userlist/userlist.reducer';
+import * as fromUser from '../models/user/user.reducer';
 
 export interface RouterStateUrl {
   url: string;
@@ -29,20 +29,31 @@ const modules = {
 export interface AppState {
   router: fromRouter.RouterReducerState<RouterStateUrl>;
   user: fromUser.UserState;
+  userlist: fromUserList.UserListState;
 }
 
 export const syncReducers = {
   router: routerReducer,
-  user: fromUser.userReducer
+  user: fromUser.userReducer,
+  userlist: fromUserList.userlistReducer
 };
 
-export const getUserState = createFeatureSelector<fromUser.UserState>('user');
 
-export const getUserLoaded = createSelector(
-  getUserState,
-  fromUser.getLoaded
+// Selectors
+export const getUserState = createFeatureSelector<fromUser.UserState>('user');
+export const getUserListState = createFeatureSelector<fromUserList.UserListState>('userlist');
+
+export const getUsersLoaded = createSelector(
+  getUserListState,
+  fromUserList.getLoaded
 );
 
+export const getUserList = createSelector(
+  getUserListState,
+  fromUserList.getUsers
+);
+
+// HMR Stuff
 export class CustomSerializer implements RouterStateSerializer<RouterStateUrl> {
   serialize(routerState: RouterStateSnapshot): RouterStateUrl {
     let route = routerState.root;
