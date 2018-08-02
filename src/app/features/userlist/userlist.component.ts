@@ -1,5 +1,9 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { UserList } from '../../models/userlist/userlist';
+import { User } from '../../models';
+import { Store } from '../../../../node_modules/@ngrx/store';
+import * as fromRoot from '../../reducers';
+import * as UserActions from '../../models/user/user.actions';
 
 @Component({
   selector: 'app-userlist',
@@ -8,10 +12,16 @@ import { UserList } from '../../models/userlist/userlist';
 })
 export class UserListComponent implements OnInit {
   @Input() userlist: UserList;
-  constructor() {
-    console.log('Got userlist:');
-    console.log(this.userlist);
+  @Input() loaded: boolean;
+  constructor(
+    private $store: Store<fromRoot.AppState>
+  ) {
+
   }
 
   ngOnInit(): void { }
+
+  select(user: User) {
+    this.$store.dispatch(new UserActions.SetUser(user));
+  }
 }

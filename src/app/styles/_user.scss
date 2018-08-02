@@ -1,10 +1,11 @@
-.qr-container {
-  display: flex;
-  justify-content: center;
-  margin: 40px;
+.face {
+  img {
+    height: 350px;
+    box-shadow: 7px 7px 5px #eee;
+  }
 }
-
-.confirm {
-  display: flex;
-  margin: auto;
+.name {
+  margin-top: 20px;
+  font-size: 30px;
+  text-shadow: 1px 2px #eee;
 }

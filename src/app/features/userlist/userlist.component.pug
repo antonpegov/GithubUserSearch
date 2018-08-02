@@ -1,6 +1,6 @@
-h4 Users found: {{userlist ? userlist.total : 0}}
 ul.userlist(*ngIf="userlist")
   li(*ngFor="let user of userlist.users")
     .userentry
-      img([src]="user.avatar_url")
+      img([src]="user.avatar_url", (click)="select(user)")
       span {{user.login}}
+.total(*ngIf="loaded") Users found: {{userlist ? userlist.total : 0}}

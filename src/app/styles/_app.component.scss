@@ -5,17 +5,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.nav>li {
-    position: relative;
-    display: block;
-    float: left;
-}
-
-
-#my-app-title, #my-nav-menu{
-  float: left;
-}
-
 #my-nav-menu {
   @media screen and (min-width: $break-large) {
     position: relative;
@@ -23,6 +12,27 @@
   }
 }
 
+#splash {
+  display: none;
+}
+
+body {
+  // padding-top: 250px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.logo {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  img {
+    width: 165px;
+    margin: auto;
+  }
+}
 
 section {
   margin-left: 15px;

@@ -1,2 +1,7 @@
 section
-  h2 User page
+  .entry.face
+    img([src]="user.avatar_url", [style.width]="300")
+  .entry.name
+    span {{userName}} (
+      a(href="{{user.html_url}}", title="Open user's github page") {{user.login}}
+    span )

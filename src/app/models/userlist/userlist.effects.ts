@@ -18,7 +18,6 @@ export class UserListEffects {
     private $user: UserService
   ) { }
 
-
   @Effect()
   loadUsers$ = this.$actions$.ofType(UserListActionTypes.Search).pipe(
     switchMap((action: any) => {

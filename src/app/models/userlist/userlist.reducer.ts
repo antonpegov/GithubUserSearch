@@ -16,7 +16,7 @@ export const emptyUserList: UserList = {
 export const initialState: UserListState = {
   userlist: emptyUserList,
   loading: false,
-  loaded: true,
+  loaded: false,
 };
 
 export function userlistReducer(state = initialState, action: UserListActions): UserListState {

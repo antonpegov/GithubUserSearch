@@ -1,9 +1,9 @@
 section
-  .entry
+  .entry.input
     input([(ngModel)]="str",
       type="text",
       id="searchInput",
-      size="18",
+      size="40",
       maxlength="20",
       (keyup.enter)="search(str)",
       placeholder="Enter name here...")
@@ -16,4 +16,4 @@ section
       *ngIf="userListLoading$|async",
       style="margin-left: 10px; font-size: 24px; color: #ff6358")
   .enrty
-    app-userlist([userlist]="userList$|async")
+    app-userlist([userlist]="userList$|async", [loaded]="userListLoaded$|async")
