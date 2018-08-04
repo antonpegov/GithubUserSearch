@@ -4,5 +4,7 @@ export interface User {
   readonly _url?: string;
   readonly html_url?: string;
   readonly url?: string;
-  readonly followers_url?: string;
+  readonly name?: string;
+  readonly followers?: string;
+  readonly location?: string;
 }

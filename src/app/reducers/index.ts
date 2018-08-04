@@ -43,20 +43,10 @@ export const syncReducers = {
 export const getUserState = createFeatureSelector<fromUser.UserState>('user');
 export const getUserListState = createFeatureSelector<fromUserList.UserListState>('userlist');
 
-export const getUsersLoaded = createSelector(
-  getUserListState,
-  fromUserList.getLoaded
-);
-
-export const getUsersLoading = createSelector(
-  getUserListState,
-  fromUserList.getLoading
-);
-
-export const getUserList = createSelector(
-  getUserListState,
-  fromUserList.getUsers
-);
+export const getUsersLoaded = createSelector(getUserListState, fromUserList.getLoaded);
+export const getUsersLoading = createSelector(getUserListState, fromUserList.getLoading);
+export const getUsersExtended = createSelector(getUserListState, fromUserList.getExtended);
+export const getUserList = createSelector(getUserListState, fromUserList.getUsers);
 
 // HMR Stuff
 export class CustomSerializer implements RouterStateSerializer<RouterStateUrl> {

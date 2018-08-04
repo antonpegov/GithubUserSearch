@@ -5,6 +5,7 @@ import { StoreRouterConnectingModule } from '@ngrx/router-store';
 import { StoreModule, MetaReducer } from '@ngrx/store';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ButtonsModule } from '@progress/kendo-angular-buttons';
+// import { ChartModule } from '@progress/kendo-angular-charts';
 import { DEV_REDUCERS, syncReducers, AppState } from './reducers';
 import { RouterEffects } from './effects/router';
 import { UserEffects } from './models/user/user.effects';
@@ -15,6 +16,7 @@ export const metaReducers: MetaReducer<AppState>[] = ENV === 'development' ?
 
 export const APP_IMPORTS = [
   ButtonsModule,
+  // ChartModule,
   FormsModule,
   BrowserAnimationsModule,
   EffectsModule.forRoot([

@@ -5,9 +5,13 @@ import { RequestBase } from './request-base';
 import { HttpClient } from '@angular/common/http';
 import { User, UserList } from '../models';
 import { Router } from '@angular/router';
+import { of } from 'rxjs';
 
 @Injectable()
 export class UserService extends RequestBase {
+
+  private mock = {name: 'TestName', followers: 50, location: 'TestLocation'};
+
   constructor(
     @Inject('AppConfig') private $config,
     public $http: HttpClient,
@@ -15,6 +19,7 @@ export class UserService extends RequestBase {
   ) {
     super($http);
   }
+
 
   getUsers(str): Observable<UserList> {
     return this.http
@@ -26,10 +31,11 @@ export class UserService extends RequestBase {
   }
 
   getUserData(user: User) {
+    // return of(this.mock);
     return this.http
       .get(user.url)
       .pipe(
-        map((_resp: any) => {return {name: _resp.name, followers: _resp.followers}; }),
+        map((_resp: any) => {return {name: _resp.name, followers: _resp.followers, location: _resp.location}; }),
         catchError((error: any) => Observable.throw(error.json()))
       );
   }

@@ -147,6 +147,23 @@
     "@progress/kendo-schematics" "^0.2.0"
     tslib "^1.7.0"
 
+"@progress/kendo-angular-charts@^3.3.0":
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-angular-charts/-/kendo-angular-charts-3.3.0.tgz#49245064c062a8c6a64896fc9d28ca0e1e939dfc"
+  dependencies:
+    "@progress/kendo-angular-popup" "^2.0.0"
+    "@progress/kendo-angular-resize-sensor" "^3.0.0"
+    "@progress/kendo-charts" "^1.11.0"
+    "@progress/kendo-schematics" "^0.2.0"
+    tslib "^1.7.0"
+
+"@progress/kendo-angular-intl@^1.4.1":
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-angular-intl/-/kendo-angular-intl-1.4.1.tgz#3992d5337b92e7f64bd28f52e82b3907d1cbd5c8"
+  dependencies:
+    "@telerik/kendo-intl" "^1.3.0"
+    tslib "^1.7.0"
+
 "@progress/kendo-angular-l10n@^1.2.0":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@progress/kendo-angular-l10n/-/kendo-angular-l10n-1.2.0.tgz#314a84dfea1255067a4dcd1ef7928f63f067b5ef"
@@ -168,6 +185,22 @@
     "@progress/kendo-popup-common" "^1.6.0"
     "@progress/kendo-schematics" "^0.2.0"
     tslib "^1.7.0"
+
+"@progress/kendo-angular-resize-sensor@^3.0.0":
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-angular-resize-sensor/-/kendo-angular-resize-sensor-3.0.3.tgz#eb0f2b858638be4fdadd424c1800855c53804a95"
+  dependencies:
+    tslib "^1.7.0"
+
+"@progress/kendo-charts@^1.11.0":
+  version "1.11.0"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-charts/-/kendo-charts-1.11.0.tgz#24d208a818f4a8212396d0e3f6eeb3ff53b15c80"
+
+"@progress/kendo-drawing@^1.5.7":
+  version "1.5.7"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-drawing/-/kendo-drawing-1.5.7.tgz#03c8edadf85a7880234657e87599106b76fbc88e"
+  dependencies:
+    pako "^1.0.5"
 
 "@progress/kendo-popup-common@^1.6.0":
   version "1.6.0"
@@ -194,6 +227,10 @@
 "@telerik/kendo-draggable@^1.5.1":
   version "1.8.2"
   resolved "https://registry.yarnpkg.com/@telerik/kendo-draggable/-/kendo-draggable-1.8.2.tgz#c0a4026f6aaffa6b0dabb8c6d4d7bd7e6754135d"
+
+"@telerik/kendo-intl@^1.3.0":
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/@telerik/kendo-intl/-/kendo-intl-1.4.1.tgz#46a7e271eba4ee591ab64dfdc98a1b1e08f1654c"
 
 "@types/babel-types@*", "@types/babel-types@^7.0.0":
   version "7.0.4"
@@ -4080,6 +4117,10 @@ gzip-size@^4.1.0:
     duplexer "^0.1.1"
     pify "^3.0.0"
 
+hammerjs@^2.0.8:
+  version "2.0.8"
+  resolved "https://registry.yarnpkg.com/hammerjs/-/hammerjs-2.0.8.tgz#04ef77862cff2bb79d30f7692095930222bf60f1"
+
 handle-thing@^1.2.5:
   version "1.2.5"
   resolved "https://registry.yarnpkg.com/handle-thing/-/handle-thing-1.2.5.tgz#fd7aad726bf1a5fd16dfc29b2f7a6601d27139c4"
@@ -6664,7 +6705,7 @@ package-json@^4.0.0:
     registry-url "^3.0.3"
     semver "^5.1.0"
 
-pako@~1.0.2, pako@~1.0.5:
+pako@^1.0.5, pako@~1.0.2, pako@~1.0.5:
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/pako/-/pako-1.0.6.tgz#0101211baa70c4bca4a0f63f2206e97b7dfaf258"
 

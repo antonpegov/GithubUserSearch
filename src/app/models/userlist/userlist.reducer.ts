@@ -6,6 +6,8 @@ export interface UserListState {
   userlist: UserList;
   loading: boolean;
   loaded: boolean;
+  extended: boolean;
+  pattern: string;
 }
 
 export const emptyUserList: UserList = {
@@ -17,6 +19,8 @@ export const initialState: UserListState = {
   userlist: emptyUserList,
   loading: false,
   loaded: false,
+  extended: false,
+  pattern: ''
 };
 
 export function userlistReducer(state = initialState, action: UserListActions): UserListState {
@@ -34,16 +38,26 @@ export function userlistReducer(state = initialState, action: UserListActions): 
       };
     }
     case UserListActionTypes.Set: {
-      console.log({
-        ...state,
-        loading: false,
-        loaded: true,
-        userlist: action.payload
-      });
       return {
         ...state,
         loading: false,
         loaded: true,
+        extended: false,
+        pattern: action.pattern,
+        userlist: action.payload
+      };
+    }
+    // case UserListActionTypes.Extend: {
+    //   return {
+    //     ...state,
+    //     // extended: false,
+    //     userlist: action.payload
+    //   };
+    // }
+    case UserListActionTypes.ExtendSuccess: {
+      return {
+        ...state,
+        extended: true,
         userlist: action.payload
       };
     }
@@ -54,6 +68,7 @@ export function userlistReducer(state = initialState, action: UserListActions): 
 }
 
 // #region Getters for Selectors
+export const getExtended = (state: UserListState) => state.extended;
 export const getLoaded = (state: UserListState) => state.loaded;
 export const getLoading = (state: UserListState) => state.loading;
 export const getUsers = (state: UserListState) => { return state.userlist; };

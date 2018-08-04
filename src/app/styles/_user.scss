@@ -1,11 +1,49 @@
-.face {
-  img {
-    height: 350px;
-    box-shadow: 7px 7px 5px #eee;
+section.user {
+  border: 1px solid #eee;
+  padding: 25px 50px;
+  background: #fdfdfd;
+  .face {
+    position: relative;
+    top: -5px;
+    img {
+      height: 250px;
+      box-shadow: 7px 7px 5px #eee;
+    }
   }
-}
-.name {
-  margin-top: 20px;
-  font-size: 30px;
-  text-shadow: 1px 2px #eee;
+  .name {
+    margin-top: 20px;
+    font-size: 25px;
+    text-shadow: 1px 2px #eee;
+  }
+  .location {
+    .title {
+      padding-left: 10px;
+    }
+  }
+  .back {
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 25px;
+    text-align: center;
+    .button {
+      border: 1px solid #eee;
+      padding: 4px 8px;
+      background: #f8f8f8;
+      color: dodgerblue;
+      &:hover {
+        background: #eee;
+      }
+    }
+  }
+  .chart {
+    left: 0;
+    margin-top: 20px;
+    position: absolute;
+    width: 100%;
+    .k-chart {
+      width: 600px;
+      position: relative;
+      margin: auto;
+    }
+  }
 }
