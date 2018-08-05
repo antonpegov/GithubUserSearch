@@ -5,13 +5,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-#my-nav-menu {
-  @media screen and (min-width: $break-large) {
-    position: relative;
-    left: 14px;
-  }
-}
-
 #splash {
   display: none;
 }
@@ -34,6 +27,12 @@ body {
   }
 }
 
-section {
-  margin-left: 15px;
+@include media-breakpoint-down(sm) {
+  .logo {
+    height: 100px;
+    img {
+      width: 80px;
+      margin: auto;
+    }
+  }
 }

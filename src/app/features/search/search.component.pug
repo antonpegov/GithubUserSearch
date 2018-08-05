@@ -1,10 +1,10 @@
-section
+section.search
   .entry.input
     input([(ngModel)]="str",
       type="text",
       id="searchInput",
-      size="40",
-      maxlength="20",
+      size="25",
+      maxlength="50",
       (keyup.enter)="search(str)",
       placeholder="Enter name here...")
     button(

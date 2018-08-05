@@ -1,4 +1,5 @@
 @import '../../styles/variables';
+@import 'bootstrap/scss/bootstrap.scss';
 img {
   height: 50px;
 }
@@ -22,4 +23,10 @@ ul {
 .total {
   border-top: 1px solid $my-blue;
   padding: 5px;
+}
+
+@include media-breakpoint-down(sm) {
+  img {
+    height: 25px;
+  }
 }

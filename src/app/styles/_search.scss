@@ -1,26 +1,37 @@
-.spinner {
-  margin: 0 !important;
-  font-size: 25px;
-  color: #ff6358;
-  position: relative;
-  right: -50px;
-  display: inline;
-}
-.input {
-  border: 1px solid $my-blue;
-  padding: 8px 15px;
-  input {
-    padding: 0;
-    display: inline-block;
-    border: none;
-    width: auto;
+.search {
+  .spinner {
+    margin: 0 !important;
+    font-size: 25px;
+    color: #ff6358;
     position: relative;
-    top: 2px;
-    &:focus {
-      outline: none;
+    right: -50px;
+    display: inline;
+  }
+
+  .input {
+    border: 1px solid $my-blue;
+    padding: 8px 15px;
+    input {
+      padding: 0;
+      display: inline-block;
+      border: none;
+      width: auto;
+      position: relative;
+      top: 2px;
+      &:focus {
+        outline: none;
+      }
+    }
+    button {
+      padding: 10px 20px !important;
     }
   }
-  button {
-    padding: 10px 20px !important;
+
+  @include media-breakpoint-down(sm) {
+    min-width: 300px;
+    .input button {
+      padding: 4px 4px !important;
+      font-size: 12px;
+    }
   }
 }
