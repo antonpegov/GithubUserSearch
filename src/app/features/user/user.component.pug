@@ -15,9 +15,10 @@ section.user
     kendo-chart(style="height: 200px; margin-top: 30px;")
       kendo-chart-title(text="Followers chart")
       //- kendo-chart-tooltip(format="{0} Token")
-      kendo-chart-legend(position="bottom", orientation="horizontal")
+      kendo-chart-legend(position="bottom", orientation="vertical")
       kendo-chart-category-axis
         kendo-chart-category-axis-item([categories]="names")
+        kendo-chart-category-axis-labels([background]="blue")
       kendo-chart-series
         kendo-chart-series-item(type="area", [data]="data")
 
