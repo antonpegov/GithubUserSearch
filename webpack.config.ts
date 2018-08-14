@@ -164,7 +164,7 @@ const clientConfig = function webpackConfig(): WebpackConfig {
         template: 'src/index.html',
         metadata: { isDevServer: DEV_SERVER },
         title: 'Github User Search',
-        base_href: GITHUB ? 'https://antonpegov.github.io/GITHUB_USER_SEARCH/' : '/',
+        base_href: GITHUB ? 'https://antonpegov.github.io/GithubUserSearch/' : '/',
     }),
     ...MY_CLIENT_PLUGINS
   ];
