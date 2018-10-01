@@ -8,7 +8,7 @@
     "url": "https://github.com/antonpegov/GITHUB_USER_SEARCH.git"
   },
   "scripts": {
-    "postinstall": "npm run sass && npm run build:dll && npm run build",
+    "postinstall": "npm run sass && npm run build:dll && npm run build:dist",
     "rimraf": "rimraf",
     "webdev": "webpack-dev-server",
     "webdev:hmr": "npm run webdev -- --hotOnly --hot --inline",
